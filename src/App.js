@@ -2,6 +2,7 @@ import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
 import { IoMenu,IoLogoGithub } from "react-icons/io5"
 import Ahmad from "./img/ahmad.jpg"
+import { motion } from 'framer-motion'
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -42,9 +43,9 @@ function App() {
             <a href="#mint" className="text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out">Mint</a>
             <a href="#home" className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out">Connect Wallet</a>
           </div>
-          <div className="block md:hidden ml-auto cursor-pointer" onClick={()=> setisActive(!isActive)}>
+          <motion.div whileTap={{scale: 0.5}} className="block md:hidden ml-auto cursor-pointer" onClick={()=> setisActive(!isActive)}>
             <IoMenu className="text-2xl text-textBase" />
-          </div>
+          </motion.div>
 
           {isActive && (
             <div className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6">
@@ -93,11 +94,11 @@ function App() {
                 const i = coffee
                  !drink i.
             </p>
-            <button class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
+            <motion.button whileTap={{scale: 0.7}} class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
                 <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                   Download
                 </span>
-            </button>
+            </motion.button>
           </div>
         </section>
         {/* timelin */}
@@ -134,9 +135,9 @@ function App() {
             <div className="flex flex-col-1 items-center justify-between">
               <p className="text-lg text-gray-300">Technologies <span className="block text-sm text-gray-500">{n.tech}</span></p>
               <a href={n.github}>
-                <div className="">
+                <motion.div whileTap={{scale: 0.5}} className="">
                   <IoLogoGithub className="text-textBase text-3xl cursor-pointer"/>
-                </div>
+                </motion.div>
               </a>
             </div>
           </div>
@@ -148,10 +149,10 @@ function App() {
           <p className="text-2xl text-gray-400 capitalize">Follow me on</p>
           <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
             {SocialLinks && SocialLinks.map(n => (
-            <a key={n.id} href={n.link} className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3" >
+            <motion.a whileTap={{scale: 0.6}} key={n.id} href={n.link} className="w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3" >
               {n.iconSrc}
               <p className="text-lg text-textBase">{n.name}</p>
-            </a>
+            </motion.a>
             ))}
           </div>
         </section>
