@@ -86,10 +86,10 @@ function App() {
           <div className="w-full h-420 flex flex-col items-center justify-center">
             <p className="text-lg text-textBase text-center">
                 Hi there,
-                i`m Ahmad Auwal Abubakar,
-                Certified Blockchain Developer,Node Js and also a self though Javascript Developer,
-                With 3 years of Experience, i started my coding Journey almost 6 years back at school,
-                then as a kid i was writing Java codes. i use FrameWorks like React Js, Next Js ,Openzeppelin ,Ethers 
+                I`m Ahmad Auwal Abubakar,
+                Certified Blockchain, Node Js, and also a self-thought Javascript Developer,
+                With 3 years of Experience, I started my coding journey almost 6 years back at school,
+                then as a kid, I was writing Java codes. I use Frameworks like React Js, Next Js, Openzeppelin, Ethers 
                 and so much more. Coding is my Hobby,
                 const i = coffee
                  !drink i.
