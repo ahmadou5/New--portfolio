@@ -1,10 +1,9 @@
 import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
-import { IoMenu,IoLogoGithub,  } from "react-icons/io5"
-import Ahmad from "./img/ahmad.jpg"
-Import { FiExternalLink } from 'react-icons/fi'
-import { motion } from 'framer-motion'
-
+import { IoMenu,IoLogoGithub,  } from "react-icons/io5";
+import Ahmad from "./img/ahmad.jpg";
+Import { FiExternalLink } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Experience, Projects, SocialLinks } from "./data";
