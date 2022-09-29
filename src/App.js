@@ -1,6 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
-import { IoMenu,IoLogoGithub } from "react-icons/io5"
+import { IoMenu,IoLogoGithub, FiExternalLink } from "react-icons/io5"
 import Ahmad from "./img/ahmad.jpg"
 import { motion } from 'framer-motion'
 
@@ -134,11 +134,18 @@ function App() {
             <img src={n.imageSrc} alt="" className="w-full h-340 object-cover rounded-md my-4"/>
             <div className="flex flex-col-1 items-center justify-between">
               <p className="text-lg text-gray-300">Technologies <span className="block text-sm text-gray-500">{n.tech}</span></p>
-              <a href={n.github}>
-                <motion.div whileTap={{scale: 0.5}} className="">
-                  <IoLogoGithub className="text-textBase text-3xl cursor-pointer"/>
-                </motion.div>
-              </a>
+              <div className="flex flex-col-1 items-center justify-between">
+                <a href={n.github}>
+                  <motion.div whileTap={{scale: 0.5}} className="">
+                    <IoLogoGithub className="text-textBase text-3xl cursor-pointer"/>
+                  </motion.div>
+                </a>
+                <a href={n.projectUrl}>
+                  <motion.div whileTap={{scale: 0.5}} className="">
+                    <FiExternalLink className="text-textBase text-3xl cursor-pointer"/>
+                  </motion.div>
+                </a>
+              </div>
             </div>
           </div>
           ))}
