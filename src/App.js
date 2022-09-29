@@ -1,7 +1,8 @@
 import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
-import { IoMenu,IoLogoGithub, FiExternalLink } from "react-icons/io5"
+import { IoMenu,IoLogoGithub,  } from "react-icons/io5"
 import Ahmad from "./img/ahmad.jpg"
+Import { FiExternalLink } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
