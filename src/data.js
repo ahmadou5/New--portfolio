@@ -38,6 +38,7 @@ export const Projects = [
         imageSrc: mint,
         tech: "ReactJs, NextJs, Ethers, Tailwind,",
         github: "https://github.com/ahmadou5/minter",
+        projectUrl: "https://minter-jet.vercel.app/"
     },
     {
         id: 2,
@@ -45,6 +46,7 @@ export const Projects = [
         imageSrc: ico,
         tech: "ReactJs, Tailwind, Ethers, NextJs",
         github: "https://github.com/ahmadou5/ico-dapp",
+        projectUrl: "https://ico-ahmadou5.vercel.app/"
     },
     {
         id: 3,
@@ -52,6 +54,7 @@ export const Projects = [
         imageSrc: collection,
         tech: "ReactJs, Tailwind, Ethers, IPFS",
         github: "https://github.com/ahmadou5/NFT-Collection",
+        projectUrl: "https://nft-collection-ahmadou5.vercel.app/"
     },
     {
         id: 4,
@@ -59,6 +62,7 @@ export const Projects = [
         imageSrc: devs,
         tech: "ReactJs, NextJs, Ethers",
         github: "https://github.com/ahmadou5/crypt-devs",
+        projectUrl: "https://crypt-devs.vercel.app/"
     },
 ];
 
