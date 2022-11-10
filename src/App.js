@@ -2,6 +2,7 @@ import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
 import { IoMenu,IoLogoGithub,  } from "react-icons/io5";
 import Ahmad from "./img/ahmad.png";
+import resume from './img/resume.pdf'
 import { FiExternalLink } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -94,9 +95,9 @@ function App() {
                 const i = coffee
                  !drink i.
             </p>
-            <motion.button whileTap={{scale: 0.7}} class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
+            <motion.button whileTap={{scale: 0.7}} onClick={() => window.open(resume)} class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80">
                 <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  Download
+                  View Resume 📄
                 </span>
             </motion.button>
           </div>
@@ -165,9 +166,14 @@ function App() {
         </section>
         {/* contact section */}
         <section id="mint" className="w-full my-24 flex flex-col items-center justify-center">
+          <div className="w-[90%] border mb-7 bg-white"></div>
+          <div className="w-[90%] bg-transparent h-16 rounded-2xl text-textBase text-2xl mr-6 ml-8 shadow drop-shadow-2xl mt-10" >
+             Build With ❤️ by{' '} 👨🏾‍💻 Ahmad Auwal
+           </div>
           
         </section>
       </main> 
+
     </div>
   );
 } 
