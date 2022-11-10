@@ -1,8 +1,8 @@
 import Spline from "@splinetool/react-spline";
 import { useEffect, useState } from "react";
 import { IoMenu,IoLogoGithub,  } from "react-icons/io5";
-import Ahmad from "./img/ahmad.jpg";
-Import { FiExternalLink } from 'react-icons/fi';
+import Ahmad from "./img/ahmad.png";
+import { FiExternalLink } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -78,7 +78,7 @@ function App() {
           {/* img box*/}
           <div className="w-full h-420 flex items-center justify-center">
             <div className="w-275 h-340 bg-emerald-200 relative rounded-md">
-              <img className="w-full h-full absolute object-cover shadow-md -right-4 top-4 rounded-lg" src={Ahmad} alt="" />
+              <img className="w-full h-full absolute object-cover bg-black shadow-md -right-4 top-4 rounded-lg" src={Ahmad} alt="" />
             </div>
           </div>
 
@@ -134,15 +134,15 @@ function App() {
             <img src={n.imageSrc} alt="" className="w-full h-340 object-cover rounded-md my-4"/>
             <div className="flex flex-col-1 items-center justify-between">
               <p className="text-lg text-gray-300">Technologies <span className="block text-sm text-gray-500">{n.tech}</span></p>
-              <div className="flex flex-col-1 items-center justify-between">
+              <div className="flex flex-col-2 w-24 items-center justify-between">
                 <a href={n.github}>
                   <motion.div whileTap={{scale: 0.5}} className="">
-                    <IoLogoGithub className="text-textBase text-3xl cursor-pointer"/>
+                    <IoLogoGithub className="text-textBase text-3xl ml-2 mr2 cursor-pointer"/>
                   </motion.div>
                 </a>
                 <a href={n.projectUrl}>
                   <motion.div whileTap={{scale: 0.5}} className="">
-                    <FiExternalLink className="text-textBase text-3xl cursor-pointer"/>
+                    <FiExternalLink className="text-textBase text-3xl ml-2 mr-2 cursor-pointer"/>
                   </motion.div>
                 </a>
               </div>
